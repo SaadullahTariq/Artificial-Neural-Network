@@ -26,9 +26,9 @@ x2 = list(map(int, input().split(' ')))
 
 print("Enter Output: ")
 t = list(map(int, input().split(' ')))
-
+length = len(t)
 i = 0
-while i <= 3:
+while i < length:
     #First we will calculate Zin
     zin1 = b1 + (w11 * x1[i]) + (w12 * x2[i])
     zin2 = b2 + (w21 * x1[i]) + (w22 * x2[i])
