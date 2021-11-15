@@ -1,5 +1,6 @@
 a=1
-b=w1=w2=yin=net=delta=0
+theeta = 0.2
+b=w1=w2=yin=net=0
 y_arr = [0] * 4
 yin_arr = [0] * 4
 w1_arr = [0] * 4
@@ -32,9 +33,9 @@ while i <= 3:
     yin = b + (w1 * x1[i]) + (w2 * x2[i])
     yin_arr[i] = yin
     print("Yin: ", yin)
-    if (yin > 0):
+    if (yin > theeta):
         y = 1
-    elif (yin == 0):
+    elif (theeta > yin > -theeta):
         y = 0
     else:
         y = -1
