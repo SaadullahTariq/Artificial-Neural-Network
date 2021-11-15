@@ -19,14 +19,15 @@ print("Enter x2: ")
 x2 = list(map(int, input().split(' ')))
 print("Enter Output: ")
 t = list(map(int, input().split(' ')))
+length = len(t)
 i = 0
-while i <= 3:
+while i < length:
     if (t[i] == 0):
         t[i] = -1
     i += 1
 
 i = 0
-while i <= 3:
+while i < length:
     yin = b + (w1 * x1[i]) + (w2 * x2[i])
     yin_arr[i] = yin
     w1c = a * x1[i] * (t[i] - yin)
